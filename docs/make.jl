@@ -6,11 +6,11 @@ DocMeta.setdocmeta!(Dizkord, :DocTestSetup, :(using Dizkord); recursive=true)
 makedocs(;
     modules=[Dizkord],
     authors="Kyando2",
-    repo="https://github.com/Kyando2/Dizkord.jl/blob/{commit}{path}#{line}",
+    repo="https://github.com/uncomfyhalomacro/Dizkord.jl/blob/{commit}{path}#{line}",
     sitename="Dizkord",
     format=Documenter.HTML(;
         prettyurls=get(ENV, "CI", "false") == "true",
-        canonical="https://github.com/Kyando2/Dizkord.jl",
+        canonical="https://github.com/uncomfyhalomacro/Dizkord.jl",
         assets=String[],
     ),
     pages=[
@@ -19,6 +19,6 @@ makedocs(;
 )
 
 deploydocs(;
-    repo="https://github.com/Kyando2/Dizkord.jl",
+    repo="https://github.com/uncomfyhalomacro/Dizkord.jl",
     devbranch="master",
 )
